@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Voucher</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <div class="voucher-container">
+        <h1>Gift a Foodie Experience!</h1>
+        <p>Select a voucher value and customize your gift.</p>
+        <form id="voucher-form">
+            <label for="recipient-name">Recipient's Name</label>
+            <input type="text" id="recipient-name" placeholder="Enter recipient's name" required>
+            
+            <label for="voucher-value">Voucher Value</label>
+            <select id="voucher-value" required>
+                <option value="">Select an amount</option>
+                <option value="25">₹25</option>
+                <option value="50">₹50</option>
+                <option value="100">₹100</option>
+                <option value="200">₹200</option>
+            </select>
+            
+            <label for="message">Personalized Message</label>
+            <textarea id="message" placeholder="Write your message" rows="4"></textarea>
+            
+            <button type="button" id="preview-btn">Preview Voucher</button>
+            <button type="submit">Purchase Voucher</button>
+        </form>
+
+        <div id="voucher-preview" class="hidden">
+            <h2>Voucher Preview</h2>
+            <p><strong>To:</strong> <span id="preview-name"></span></p>
+            <p><strong>Value:</strong> <span id="preview-value"></span></p>
+            <p><strong>Message:</strong></p>
+            <p id="preview-message"></p>
+        </div>
+    </div>
+    <script src=""></script>
+</body>
+</html>

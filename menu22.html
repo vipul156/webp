@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: rgb(240, 83, 83);
+      border-radius: 7px;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin: 20px 40px;
+    }
+
+    .menu-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(33.333% - 20px);
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-box:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 2 / 2;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .menu-item h3 {
+      font-size: 0.8rem;
+      color: #333;
+    }
+
+    .menu-item p {
+      font-size: 0.7rem;
+      color: #333;
+    }
+
+    .add-button {
+      padding: 8px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-button:hover {
+      background-color: #218838;
+    }
+
+    .menu-description {
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .menu-box {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Restaurant Menu</h1>
+
+<div class="menu-container">
+  <!-- Starters -->
+  <div class="menu-box">
+    <img src="samosa.jpg" alt="Vegetable Samosa" class="menu-image">
+    <div class="menu-item">
+      <h3>Vegetable Samosa (2 pcs)</h3>
+      <p>₹80</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Crispy pastry stuffed with spiced potatoes and peas.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="chickenTikaa.jpg" alt="Chicken Tikka" class="menu-image">
+    <div class="menu-item">
+      <h3>Chicken Tikka</h3>
+      <p>₹250</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Juicy chicken marinated in spices and cooked in a tandoor.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="PaneerTikka.jpg" alt="Paneer Tikka" class="menu-image">
+    <div class="menu-item">
+      <h3>Paneer Tikka</h3>
+      <p>₹200</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Marinated cottage cheese grilled to perfection.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="kabab.jpg" alt="Hara Bhara Kebab" class="menu-image">
+    <div class="menu-item">
+      <h3>Hara Bhara Kebab</h3>
+      <p>₹150</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Spinach and green vegetable patties, lightly spiced.</p>
+  </div>
+
+  <!-- Soups -->
+  <div class="menu-box">
+    <img src="shorba.jpg" alt="Tomato Shorba" class="menu-image">
+    <div class="menu-item">
+      <h3>Tomato Shorba</h3>
+      <p>₹120</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Tangy tomato soup with Indian spices.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="chickensoup.jpg" alt="Chicken Manchow Soup" class="menu-image">
+    <div class="menu-item">
+      <h3>Chicken Manchow Soup</h3>
+      <p>₹150</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Indo-Chinese soup with chicken and crispy noodles.</p>
+  </div>
+
+  <!-- Main Course (Indian Delights) -->
+  <div class="menu-box">
+    <img src="butterchicken.jpg" alt="Butter Chicken" class="menu-image">
+    <div class="menu-item">
+      <h3>Butter Chicken</h3>
+      <p>₹350</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Creamy tomato-based curry with tender chicken pieces.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="ButterMasala.jpg" alt="Paneer Butter Masala" class="menu-image">
+    <div class="menu-item">
+      <h3>Paneer Butter Masala</h3>
+      <p>₹300</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Cottage cheese in rich, buttery gravy.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="dalTadka.jpg" alt="Dal Tadka" class="menu-image">
+    <div class="menu-item">
+      <h3>Dal Tadka</h3>
+      <p>₹180</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Yellow lentils tempered with spices.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="rogan.jpg" alt="Mutton Rogan Josh" class="menu-image">
+    <div class="menu-item">
+      <h3>Mutton Rogan Josh</h3>
+      <p>₹450</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Slow-cooked lamb in Kashmiri spices.</p>
+  </div>
+
+  <!-- Desserts -->
+  <div class="menu-box">
+    <img src="gulabjamun.jpg" alt="Gulab Jamun" class="menu-image">
+    <div class="menu-item">
+      <h3>Gulab Jamun (2 pcs)</h3>
+      <p>₹100</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Soft dumplings soaked in sugar syrup.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="RasMalai.jpg" alt="Rasmalai" class="menu-image">
+    <div class="menu-item">
+      <h3>Rasmalai</h3>
+      <p>₹120</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Spongy cottage cheese discs soaked in flavored milk.</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="brownie.jpg" alt="Brownie with Ice Cream" class="menu-image">
+    <div class="menu-item">
+      <h3>Brownie with Ice Cream</h3>
+      <p>₹180</p>
+      <button class="add-button">Add Item</button>
+    </div>
+    <p class="menu-description">Warm brownie served with vanilla ice cream.</p>
+  </div>
+
+</body>
+</html>
